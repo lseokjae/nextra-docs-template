@@ -1,19 +1,45 @@
 export default {
-  logo: <span>My Documentation</span>,
   project: {
-    link: 'https://github.com/my-repo'
+    link: 'https://github.com/username/project',
   },
-  docsRepositoryBase: 'https://github.com/my-repo/blob/main',
-  footer: {
-    text: 'MIT 2023 © My Project'
+  docsRepositoryBase: 'https://github.com/username/project/tree/main',
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s – My Project',
+    };
+  },
+  navigation: {
+    prev: true,
+    next: true,
   },
   sidebar: {
-    // 사이드바를 완전히 비활성화
-    defaultMenuCollapseLevel: Infinity,
-    autoCollapse: true,
-    toggleButton: false
+    titleComponent: ({ title }) => <>🔤 {title}</>,
   },
   toc: {
-    float: false // Table of Contents를 비활성화
-  }
-}
+    float: true,
+  },
+  i18n: [
+    { locale: 'en-US', text: 'English' },
+    { locale: 'ko-KR', text: '한국어' },
+  ],
+  darkMode: false,
+  nextThemes: {
+    defaultTheme: 'system',
+  },
+  primaryHue: 200,
+  logo: <span>My Project</span>,
+  projectLink: 'https://github.com/username/project',
+  // banner: {
+  //   text: 'Welcome to my project!',
+  //   dismissible: true,
+  // },
+  search: {
+    placeholder: 'Search...',
+  },
+  // 메뉴 항목 추가
+  navs: [
+    { name: 'Home', url: '/' },
+    { name: '글자수세기', url: '/word-count' },
+    { name: 'About', url: '/about' },
+  ],
+};

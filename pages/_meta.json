@@ -6,12 +6,16 @@
       "toc": false
     }
   },
+  "word-count": {
+    "title": "Word Count",
+    "type": "page"
+  },  
  "about": {
     "title": "About",
     "type": "page"
   },
-  "about2": {
-    "title": "About2",
+  "another": {
+    "title": "Another",
     "type": "page"
   },
   "contact": {
