@@ -1,18 +1,19 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
-
-const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+export default {
+  logo: <span>My Documentation</span>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://github.com/my-repo'
   },
-  chat: {
-    link: 'https://discord.com',
-  },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: 'https://github.com/my-repo/blob/main',
   footer: {
-    text: 'Nextra Docs Template',
+    text: 'MIT 2023 © My Project'
   },
+  sidebar: {
+    // 사이드바를 완전히 비활성화
+    defaultMenuCollapseLevel: Infinity,
+    autoCollapse: true,
+    toggleButton: false
+  },
+  toc: {
+    float: false // Table of Contents를 비활성화
+  }
 }
-
-export default config

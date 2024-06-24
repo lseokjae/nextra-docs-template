@@ -1,9 +1,17 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
+  "index": {
+    "title": "Home",
+    "theme": {
+      "sidebar": false,
+      "toc": false
+    }
+  },
+ "about": {
     "title": "About",
+    "type": "page"
+  },
+  "about2": {
+    "title": "About2",
     "type": "page"
   },
   "contact": {
